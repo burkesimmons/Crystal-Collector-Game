@@ -24,6 +24,8 @@ $(document).ready(function(){
 		score= 0;
 		$('#finalTotal').html(score);
 	}
+
+reset();
 // run();	
 // console.log(numberToGuess, crystal1, crystal2, crystal3, crystal4);
 $('#numberWins').html(wins);
@@ -63,50 +65,50 @@ function getRandomSm(min, max) {
 
 //sets up click for jewels
   $('#one').on ('click', function(){
-    userTotal = userTotal + num1;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal); 
+    score = score + crystal1;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score); 
           //sets win/lose conditions
-        if (userTotal == Random){
-          yay();
+        if (score == numberToGuess){
+          youWon();
         }
-        else if ( userTotal > Random){
-          loser();
+        else if ( score > numberToGuess){
+          youLost();
         }   
   })  
   $('#two').on ('click', function(){
-    userTotal = userTotal + num2;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal); 
-        if (userTotal == Random){
-          yay();
+    score = score + crystal2;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score); 
+        if (score == numberToGuess){
+          youWon();
         }
-        else if ( userTotal > Random){
-          loser();
+        else if ( score > numberToGuess){
+          youLost();
         } 
   })  
   $('#three').on ('click', function(){
-    userTotal = userTotal + num3;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal);
+    score = score + crystal3;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score);
 //sets win/lose conditions
-          if (userTotal == Random){
-          yay();
+          if (score == numberToGuess){
+          youWon();
         }
-        else if ( userTotal > Random){
-          loser();
+        else if ( score > numberToGuess){
+          youLost();
         } 
   })  
   $('#four').on ('click', function(){
-    userTotal = userTotal + num4;
-    console.log("New userTotal= " + userTotal);
-    $('#finalTotal').text(userTotal); 
+    score = score + crystal4;
+    console.log("New score= " + score);
+    $('#finalTotal').text(score); 
       
-          if (userTotal == Random){
-          yay();
+          if (score == numberToGuess){
+          youWon();
         }
-        else if ( userTotal > Random){
-          loser();
+        else if ( score > numberToGuess){
+          youLost();
         }
   }); 
 

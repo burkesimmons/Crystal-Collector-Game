@@ -8,14 +8,12 @@ img {
 body{
 	background-image: url("../images/background.png")
 }
-div{
+div {
 	background-color: white;
 	margin: 10px;
-	width: 25%
-}
-div{
 	border: solid 2px antiquewhite;
 	padding: 10px;
+	margin: auto;
 }
 h1, h3, span{
 	font-weight: bold;
@@ -36,22 +34,27 @@ div.header, div.gems{
 	background-color: #e0e0eb;
 }
 div.header, div.instructions{
-	width: 50%;
+	margin: auto;
 }
 /* Classes */
 .number-to-guess, .wins-and-losses{
 	float: left;
-	width: 15%;
 	height: 60px;
+	vertical-align: middle;
 }
 .userTotal{
-	width: 15%;
 	height: 60px;
 }
 .gems{
 	clear: both;
+	height: 130px;
 }
-.gemImage{
-	height: 60px;
+
+.gemImage {
 	margin: 10px;
 }
+
+#main-section {
+	max-width: 650px;
+}
+

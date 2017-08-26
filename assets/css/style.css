@@ -21,6 +21,7 @@ h1, h3, span{
 }
 h1{
 	font-size: 30pt;
+	font-family: 'Encode Sans Semi Expanded', sans-serif;
 }
 ol{
 	list-style: decimal inside; 
@@ -40,7 +41,6 @@ div.header, div.instructions{
 .number-to-guess, .wins-and-losses{
 	float: left;
 	height: 60px;
-	vertical-align: middle;
 }
 .userTotal{
 	height: 60px;
